@@ -25,7 +25,7 @@ public class DemoApplication {
 				// TODO initialise H2 database with schema, table, and data
 
 				realEstateRepository.save(new RealEstate("Altes Postgebäude von 1860", "Rheinaustraße 124, 53225 Bonn"));
-				realEstateRepository.save(new RealEstate("Burgertime", "Friedrich-Breuer-Straße 36"));
+				realEstateRepository.save(new RealEstate("Burgerwerk", "Friedrich-Breuer-Straße 36"));
 			}
 
 			if (LOG.isDebugEnabled()) {

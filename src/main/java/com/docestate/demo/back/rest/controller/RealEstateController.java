@@ -29,8 +29,11 @@ public class RealEstateController {
 	public List<RealEstateDTO> listAllRealEstates() {
 		ArrayList<RealEstateDTO> realEstateDTOList = new ArrayList<>();
 		for (RealEstate realEstate : realEstateRepository.findAll()) {
-			RealEstateDTO realEstateDTO = new RealEstateDTO(realEstate.getName(), realEstate.getAddress());
-			realEstateDTOList.add(realEstateDTO);
+			String id      = String.valueOf(realEstate.getId());
+			String name    = realEstate.getName();
+			String address = realEstate.getAddress();
+
+			realEstateDTOList.add(new RealEstateDTO(id, name, address));
 		}
 
 		return realEstateDTOList;
@@ -41,7 +44,7 @@ public class RealEstateController {
 		Optional<RealEstate> optionalRealEstate = realEstateRepository.findById(id);
 		if (optionalRealEstate.isPresent()) {
 			RealEstate realEstate = optionalRealEstate.get();
-			return new RealEstateDTO(realEstate.getName(), realEstate.getAddress());
+			return new RealEstateDTO(String.valueOf(realEstate.getId()), realEstate.getName(), realEstate.getAddress());
 		}
 		throw new RealEstateNotFoundException(id);
 	}
@@ -68,7 +71,7 @@ public class RealEstateController {
 
 	private RealEstateDTO saveRealEstate(RealEstate realEstate) {
 		realEstateRepository.save(realEstate);
-		return new RealEstateDTO(realEstate.getName(), realEstate.getAddress());
+		return new RealEstateDTO(String.valueOf(realEstate.getId()), realEstate.getName(), realEstate.getAddress());
 	}
 
 	@DeleteMapping("/real-estate/{id}")
