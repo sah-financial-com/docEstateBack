@@ -1,4 +1,4 @@
-package com.docestate.demo;
+package com.docestate.demo.back;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;

@@ -1,4 +1,4 @@
-package com.docestate.demo.rest.dto;
+package com.docestate.demo.back.rest.dto;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;

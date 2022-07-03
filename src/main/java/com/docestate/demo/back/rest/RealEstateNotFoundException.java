@@ -1,4 +1,4 @@
-package com.docestate.demo.rest;
+package com.docestate.demo.back.rest;
 
 public class RealEstateNotFoundException extends RuntimeException {
 

@@ -1,9 +1,9 @@
-package com.docestate.demo.rest.controller;
+package com.docestate.demo.back.rest.controller;
 
-import com.docestate.demo.db.entities.RealEstate;
-import com.docestate.demo.db.repositories.RealEstateRepository;
-import com.docestate.demo.rest.RealEstateNotFoundException;
-import com.docestate.demo.rest.dto.RealEstateDTO;
+import com.docestate.demo.back.db.entities.RealEstate;
+import com.docestate.demo.back.db.repositories.RealEstateRepository;
+import com.docestate.demo.back.rest.RealEstateNotFoundException;
+import com.docestate.demo.back.rest.dto.RealEstateDTO;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;

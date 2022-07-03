@@ -1,6 +1,6 @@
-package com.docestate.demo.db.repositories;
+package com.docestate.demo.back.db.repositories;
 
-import com.docestate.demo.db.entities.RealEstate;
+import com.docestate.demo.back.db.entities.RealEstate;
 import org.springframework.data.repository.PagingAndSortingRepository;
 import org.springframework.data.repository.query.Param;
 

@@ -1,4 +1,4 @@
-package com.docestate.demo;
+package com.docestate.demo.back;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

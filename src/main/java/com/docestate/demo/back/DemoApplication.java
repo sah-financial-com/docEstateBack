@@ -1,7 +1,7 @@
-package com.docestate.demo;
+package com.docestate.demo.back;
 
-import com.docestate.demo.db.entities.RealEstate;
-import com.docestate.demo.db.repositories.RealEstateRepository;
+import com.docestate.demo.back.db.entities.RealEstate;
+import com.docestate.demo.back.db.repositories.RealEstateRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.CommandLineRunner;
